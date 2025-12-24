@@ -23,6 +23,22 @@ st.markdown(
 BASE_DIR = Path(__file__).resolve().parent
 VIDEO_PATH = BASE_DIR / "assets" / "video" / "background.mp4"
 
+st.markdown(
+    """
+    <style>
+    /* スマホで横揺れ（横スクロール）が発生するのを防ぐ */
+    html, body {
+        overflow-x: hidden;
+    }
+    /* 画像やカードが画面幅を突き抜けないようにする */
+    img, div[data-testid="stVerticalBlockBorderWrapper"] {
+        max-width: 100% !important;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 # ✅ ファイルが無い場合に分かりやすく表示（落とさない）
 if not VIDEO_PATH.exists():
     st.error("動画ファイルが見つかりませんでした。")

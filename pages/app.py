@@ -31,6 +31,23 @@ FEASIBILITY_LABEL = {
 FEAS_DOT = {"easy": "🟢", "medium": "🟡", "learn_required": "🔵"}
 
 
+st.markdown(
+    """
+    <style>
+    /* スマホで横揺れ（横スクロール）が発生するのを防ぐ */
+    html, body {
+        overflow-x: hidden;
+    }
+    /* 画像やカードが画面幅を突き抜けないようにする */
+    img, div[data-testid="stVerticalBlockBorderWrapper"] {
+        max-width: 100% !important;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+
 # =============================
 # 背景画像とレイアウトの設定（修正版）
 # =============================
@@ -61,11 +78,15 @@ def inject_custom_css():
             background-attachment: fixed;
         }}
 
-        /* メインコンテンツの幅と余白の設定 */
+        /* メインコンテンツの幅と余白の設定（スマホ対応） */
         section[data-testid="stMain"] .block-container {{
             max-width: 860px;
-            padding-top: 7rem;
+            /* 上の余白をPCでは大きく、スマホでは小さく自動調整 */
+            padding-top: clamp(2rem, 10vh, 7rem); 
             padding-bottom: 3rem;
+            /* スマホで左右がギリギリにならないよう余白を追加 */
+            padding-left: 1rem;
+            padding-right: 1rem;
         }}
         
         /* コンテンツの背景を透過 */
@@ -76,8 +97,20 @@ def inject_custom_css():
         /* カード（border=True）の可読性アップ */
         div[data-testid="stVerticalBlockBorderWrapper"] {{
             background-color: rgba(255, 255, 255, 0.85); 
-            border-radius: 10px;
-            padding: 10px;
+            border-radius: 12px;
+            padding: 15px;
+            /* スマホでの横揺れ防止 */
+            box-sizing: border-box;
+        }}
+
+        /* スマホのフォントサイズ微調整（任意） */
+        @media (max-width: 640px) {{
+            .stMarkdown h2 {{
+                font-size: 1.5rem !important;
+            }}
+            .stMarkdown h3 {{
+                font-size: 1.2rem !important;
+            }}
         }}
 
         /* サイドバー非表示 */
@@ -91,7 +124,6 @@ def inject_custom_css():
         """,
         unsafe_allow_html=True
     )
-
 # 実行
 inject_custom_css()
 
@@ -250,7 +282,7 @@ if st.session_state.stage == "result":
         if st.button("🔁 最初からやり直す", use_container_width=True):
             reset_all()
             st.rerun()
-            
+
     with col2:
         if st.button("🤔 どれもしっくり来ない ▶", use_container_width=True):
             st.session_state.stage = "final"

@@ -1,0 +1,203 @@
+[
+  {
+    "id": "it_passport",
+    "name": "ITパスポート",
+    "tags": ["logic", "overview", "research", "communication"],
+    "why": "IT全体像を掴む入口にしやすい資格。",
+    "trend_note": "入口として人気が高く、方向性を探す人向け。",
+    "entry_task": "過去問を5問だけ眺めて世界観を掴む（10分）"
+  },
+  {
+    "id": "fe",
+    "name": "基本情報技術者",
+    "tags": ["logic", "build", "execution"],
+    "why": "論理・設計の基礎体力を作る入口資格。",
+    "trend_note": "作る・考える系職種の土台として定番。",
+    "entry_task": "シラバスを見て惹かれる章を1つ選ぶ（10分）"
+  },
+  {
+    "id": "stat",
+    "name": "統計検定（3級〜）",
+    "tags": ["research", "logic"],
+    "why": "データ思考の基礎を作る入口資格。",
+    "trend_note": "データ系職種の入口として安定人気。",
+    "entry_task": "出題範囲から気になるテーマを1つ選ぶ（10分）"
+  },
+  {
+    "id": "boki",
+    "name": "簿記3級〜2級",
+    "tags": ["structure", "logic", "execution"],
+    "why": "ビジネスの構造を数字で掴む入口資格。",
+    "trend_note": "職種を問わず評価されやすい。",
+    "entry_task": "損益計算書の図を1枚見る（10分）"
+  },
+  {
+    "id": "jstqb",
+    "name": "JSTQB（基礎）",
+    "tags": ["research", "logic", "execution"],
+    "why": "テストの考え方を体系的に学べる入口。",
+    "trend_note": "QA/テスター職の入口として検討されやすい。",
+    "entry_task": "『テストの目的』を読んで要点を1行で書く（10分）"
+  },
+  {
+    "id": "mos",
+    "name": "MOS（Excel/Word）",
+    "tags": ["execution", "structure", "reliable"],
+    "why": "事務で使うPC基礎を固める入口。",
+    "trend_note": "事務職の即戦力化に直結しやすい。",
+    "entry_task": "ExcelでSUMかIFを1つだけ試す（10分）"
+  },
+ {
+  "id": "library_foundation",
+  "name": "図書館業務基礎（入口）",
+  "tags": ["research", "structure", "stable"],
+  "why": "図書館業務に必要な分類・貸出・管理の基礎を理解する入口。",
+  "trend_note": "公共性が高く、静かな環境での業務を好む人に向く。",
+  "entry_task": "日本十進分類法（NDC）の概要を10分だけ読む"
+ },
+ {
+  "id": "insurance_foundation",
+  "name": "保険業務基礎（入口）",
+  "tags": ["structure", "logic", "stable"],
+  "why": "保険商品の仕組みや手続きの流れを理解するための入口。",
+  "trend_note": "金融・保険事務は正確性重視で安定しやすい分野。",
+  "entry_task": "生命保険と損害保険の違いを1枚の記事で確認する（10分）"
+},
+{
+  "id": "facility_foundation",
+  "name": "施設管理基礎（入口）",
+  "tags": ["execution", "reliable", "stable"],
+  "why": "建物・設備の点検や保守の考え方を学ぶ入口。",
+  "trend_note": "インフラ系は景気変動の影響を受けにくい。",
+  "entry_task": "ビル設備点検のチェック項目例を1つ見る（10分）"
+ },
+ {
+  "id": "property_foundation",
+  "name": "不動産管理基礎（入口）",
+  "tags": ["coordination", "communication", "stable"],
+  "why": "賃貸管理・入居者対応・修繕調整の全体像を掴む入口。",
+  "trend_note": "管理業務は景気に左右されにくく、長期需要がある。",
+  "entry_task": "賃貸管理会社の業務内容を10分だけ調べる"
+  },
+  {
+    "id": "dx_foundation",
+    "name": "業務改善・DX基礎（入口）",
+    "tags": ["structure", "overview", "logic"],
+    "why": "業務の見える化→改善の考え方を身につける入口。",
+    "trend_note": "非エンジニアDXは需要が伸びやすく、現場経験が武器になる。",
+    "entry_task": "自分の作業を『入力→処理→出力』で1枚に整理（10分）"
+  },
+  {
+    "id": "manual_foundation",
+    "name": "マニュアル作成・業務設計（入口）",
+    "tags": ["writing", "structure", "logic"],
+    "why": "分かりやすく手順化し、再現性を作る入口。",
+    "trend_note": "属人化を減らす動きが強く、社内で重宝されやすい。",
+    "entry_task": "“よく聞かれる手順”を1つ、見出し3つで書く（10分）"
+  },
+  {
+    "id": "training_foundation",
+    "name": "社内教育・研修サポート基礎（入口）",
+    "tags": ["care", "communication", "structure"],
+    "why": "教えるより『学びやすく整える』ための入口。",
+    "trend_note": "人材育成は景気に左右されにくいテーマとして残りやすい。",
+    "entry_task": "研修の流れ（導入→練習→確認）を1つ書く（10分）"
+  },
+  {
+    "id": "data_ops_foundation",
+    "name": "データ運用・入力管理基礎（入口）",
+    "tags": ["execution", "structure", "reliable"],
+    "why": "正確さ・入力規則・チェックの基本を固める入口。",
+    "trend_note": "業界を問わず存在し、丁寧さが評価されやすい。",
+    "entry_task": "入力ルール（形式・必須・禁止）を3つ決める（10分）"
+  },
+  {
+    "id": "helpdesk_foundation",
+    "name": "ヘルプデスク一次対応（入口）",
+    "tags": ["care", "communication", "logic"],
+    "why": "聞く→整理→切り分けの型を作る入口。",
+    "trend_note": "社内SE/情シスへの入口として相性が良い。",
+    "entry_task": "困りごとに対して『いつ/何が/どうなった』の質問を作る（10分）"
+  },
+  {
+    "id": "industry_office_foundation",
+    "name": "業界特化事務の基礎（入口）",
+    "tags": ["structure", "execution", "stable"],
+    "why": "特定業界の用語・ルール・流れを掴む入口。",
+    "trend_note": "一般事務より専門性がつき、転職時に語れる強みになりやすい。",
+    "entry_task": "興味のある業界の用語を5つだけ調べる（10分）"
+  },
+  {
+    "id": "audit_foundation",
+    "name": "内部監査・チェック業務基礎（入口）",
+    "tags": ["structure", "research", "logic"],
+    "why": "チェックリストと証跡（記録）の考え方を学ぶ入口。",
+    "trend_note": "ミス防止・不正防止の需要はなくなりにくい。",
+    "entry_task": "チェック項目を3つ作り、根拠（どこを見るか）を書いてみる（10分）"
+  },
+  {
+    "id": "cs_success_foundation",
+    "name": "カスタマーサクセス基礎（入口）",
+    "tags": ["communication", "care", "logic"],
+    "why": "顧客の目的を整理し、活用支援につなげる入口。",
+    "trend_note": "SaaSの普及で需要が伸びやすく、経験が資産になりやすい。",
+    "entry_task": "顧客の『困りごと→目的→次の行動』を1つ書く（10分）"
+  },
+  {
+    "id": "bpo_foundation",
+    "name": "BPO管理・委託運用基礎（入口）",
+    "tags": ["coordination", "structure", "overview"],
+    "why": "依頼・品質・納期を回すための運用設計を学ぶ入口。",
+    "trend_note": "外注活用が増えるほど、運用を回せる人の価値が上がりやすい。",
+    "entry_task": "依頼内容を“手順3つ”に分解し、受け入れ基準を1つ決める（10分）"
+  },
+  {
+    "id": "knowledge_mgmt_foundation",
+    "name": "ナレッジ管理・情報設計（入口）",
+    "tags": ["writing", "structure", "research"],
+    "why": "探せる・更新できる情報の置き場を作る入口。",
+    "trend_note": "AI活用が進むほど、元データ（社内知識）の整備が重要になりやすい。",
+    "entry_task": "情報を『FAQ/手順/仕様/連絡先』に分類してみる（10分）"
+  },
+  {
+    "id": "digital_marketing_foundation",
+    "name": "デジタルマーケ基礎（入口）",
+    "tags": ["research", "planning", "logic"],
+    "why": "集客→成約までの流れと、数字の見方を掴む入口。",
+    "trend_note": "未経験でも“検証の型”が作れれば伸びやすい分野。",
+    "entry_task": "好きなサービスの導線（どこで知り、どう買う）をメモ（10分）"
+  },
+  {
+    "id": "management_foundation",
+    "name": "マネジメント基礎（入口）",
+    "tags": ["overview", "decision", "coordination", "communication"],
+    "why": "人と仕事を前に進める基本（1on1/目標/任せる）を学ぶ入口。",
+    "trend_note": "役職より先に“任せる・整える”ができる人が強い。",
+    "entry_task": "『任せたい仕事』を1つ選び、期待する状態を1行で書く（10分）"
+  },
+  {
+    "id": "childcare_foundation",
+    "name": "保育の仕事理解（入口）",
+    "tags": ["care", "service", "stable"],
+    "why": "保育の現実（体力・責任・やりがい）を理解して判断する入口。",
+    "trend_note": "需要は安定しやすい一方、働き方の相性確認が特に重要。",
+    "entry_task": "保育の1日の流れを読み、負担が大きそうな場面を3つメモ（10分）"
+  },
+  {
+    "id": "medical_office",
+    "name": "医療事務の基礎（入口）",
+    "tags": ["structure", "execution", "stable", "care"],
+    "why": "医療事務の業務範囲（受付・会計・保険請求など）の全体像を掴む入口。",
+    "trend_note": "景気の影響を受けにくい一方、正確性と対人対応の両方が必要。",
+    "entry_task": "医療事務の業務フロー図を1つ見て、用語を3つメモ（10分）"
+  },
+  {
+    "id": "care_worker_entry",
+    "name": "福祉・介護の仕事理解（入口）",
+    "tags": ["care", "service", "stable"],
+    "why": "福祉・介護の役割と現場の大変さ/やりがいを理解して判断する入口。",
+    "trend_note": "需要は安定しやすい一方、体力・感情負荷・働き方の相性確認が重要。",
+    "entry_task": "支援職の1日の流れを読み、負担が大きそうな場面を3つメモ（10分）"
+  }
+]
+

@@ -5,6 +5,20 @@ import streamlit as st
 
 st.set_page_config(page_title="人生のスイッチ", layout="centered")
 
+# --- 修正1: データの読み込み前に「見た目」だけ先に決める ---
+st.markdown(
+    """
+    <style>
+    /* アプリが立ち上がった瞬間、背景を白ではなく黒めにする */
+    .stApp { background-color: #0e1117; }
+    /* サイドバーを即座に隠す */
+    section[data-testid="stSidebar"] { display: none !important; }
+    button[data-testid="stSidebarCollapsedControl"] { display: none !important; }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 # ✅ home.py の場所を起点に assets/video/background.mp4 を探す
 BASE_DIR = Path(__file__).resolve().parent
 VIDEO_PATH = BASE_DIR / "assets" / "video" / "background.mp4"

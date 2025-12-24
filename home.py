@@ -5,9 +5,6 @@ import streamlit as st
 
 st.set_page_config(page_title="☀️ 人生のスイッチ", layout="centered")
 
-st.write("RUN ID:", st.session_state.get("_run_id", 0))
-st.session_state["_run_id"] = st.session_state.get("_run_id", 0) + 1
-
 # ✅ home.py の場所を起点に assets/video/background.mp4 を探す
 BASE_DIR = Path(__file__).resolve().parent
 VIDEO_PATH = BASE_DIR / "assets" / "video" / "background.mp4"

@@ -108,13 +108,20 @@ def init_state():
     st.session_state.setdefault("show_debug", False)
 
 def reset_all():
-    for k in ["stage", "answers", "q_index", "picked_career", "final_focus"]:
+    # 1. ユーザーの選択データや進行状況だけを消去
+    keys_to_reset = ["stage", "answers", "q_index", "picked_career", "final_focus"]
+    for k in keys_to_reset:
         if k in st.session_state:
             del st.session_state[k]
+    
+    # 2. 基本状態を再セット
     init_state()
+    
+    # 3. 最初のページ（home.py）へ移動
+    st.switch_page("home.py") # ←ここがポイントです！
 
+# 最初に一度だけ実行
 init_state()
-
 # =============================
 # header
 # =============================
@@ -154,8 +161,8 @@ if st.session_state.stage == "q":
 
     with col1:
         if st.button("🔁 最初からやり直す", use_container_width=True):
-            reset_all()
-            st.rerun()
+            st.session_state.clear() # データをリセット
+            st.switch_page("home.py") # 最初のページへ
 
     with col2:
         label = "次へ ▶" if i < len(QUESTIONS_SCORE) - 1 else "結果を見る ▶"
@@ -243,6 +250,7 @@ if st.session_state.stage == "result":
         if st.button("🔁 最初からやり直す", use_container_width=True):
             reset_all()
             st.rerun()
+            
     with col2:
         if st.button("🤔 どれもしっくり来ない ▶", use_container_width=True):
             st.session_state.stage = "final"
